@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+h1 {
+  text-align: center;
+  color: #1a1a2e;
+}
+.error {
+  background: #fdecea;
+  color: #b3261e;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.card span {
+  display: block;
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+.card strong {
+  font-size: 1.3rem;
+}
+.card.income strong {
+  color: #2e7d32;
+}
+.card.expense strong {
+  color: #c62828;
+}
+.card.balance strong {
+  color: #1565c0;
+}
+.tx-form {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.tx-form input,
+.tx-form select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 8px;
+}
+.tx-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1565c0;
+  color: white;
+  cursor: pointer;
+}
+.tx-form button[type='button'] {
+  background: #999;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+tr.credit td:nth-child(2) {
+  color: #2e7d32;
+}
+tr.debit td:nth-child(2) {
+  color: #c62828;
+}
+td button {
+  margin-right: 6px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+}
